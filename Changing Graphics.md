@@ -2,7 +2,7 @@
 
 Before making graphics changes, you need to understand what gritflags are and how to create them. Gritflags contain instructions on how an image should be compiled by the engine, such as whether the palette has 16 or 256 colors, whether the tileset, tilemap or palette are compressed, specify what you want to be generated during compilation, etc. This allows us to have a better customization.
 
-I will teach you how to create custom gritflags for your images. I recommend seeing all the Grit commands here before proceeding, so you can understand what each command does.  Also i'll just highlight the most important commands.
+I will teach you how to create custom gritflags for your images. I recommend seeing all the Grit commands [here](https://www.coranac.com/man/grit/html/grit.htm) before proceeding, so you can understand what each command does.  Also i'll just highlight the most important commands.
 
 The syntax for gritflags is pretty simple, you just have to separate all commands by whitespace, like the example below:
 
@@ -24,7 +24,7 @@ So, lets start. Here's a list of commands that I consider important, and when yo
 
 `-ahY` : This command is used to determine the height of the image. Replace `Y` with the height of the image.
 
--awX : This works like the command `-ahY`, but this one is used to determine the image weight. you just have to change `X` with the image weight. `-awX` and `-ahY` are used to determine the image size. It's a good practice to always use these two commands in your gritflags.
+`-awX` : This works like the command `-ahY`, but this one is used to determine the image weight. you just have to change `X` with the image weight. `-awX` and `-ahY` are used to determine the image size. It's a good practice to always add these two commands in your gritflags.
 
 ### Tilemap Options
 
