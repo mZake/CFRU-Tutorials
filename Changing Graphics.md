@@ -1,6 +1,6 @@
 ## Step 1 - Creating gritflags.
 
-Before making graphics changes, you need to understand what gritflags are and how to create them. Gritflags contain instructions on how an image should be compiled by the engine, such as whether the palette has 16 or 256 colors, whether the tileset, tilemap or palette are compressed, specify what you want to be generated during compilation, etc. This allows us to have a better customization.
+Before making graphics changes, you need to understand what gritflags are and how to create them. Grit is the image compiler in the CFRU engine. Gritflags contain instructions on how an image should be compiled by Grit, such as whether the palette has 16 or 256 colors, whether the tileset, tilemap or palette are compressed, specify what you want to be generated during compilation, etc. This allows us to have a better customization.
 
 I will teach you how to create custom gritflags for your images. I recommend seeing all the Grit commands [here](https://www.coranac.com/man/grit/html/grit.htm) before proceeding, so you can understand what each command does.  Also i'll just highlight the most important commands.
 
