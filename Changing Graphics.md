@@ -20,13 +20,13 @@ So, lets start. Here's a list of commands that I consider important, and when yo
 
 `-gzl` : Add this command if you want the generated tileset to be compressed.
 
-Area Options
+### Area Options
 
 `-ahY` : This command is used to determine the height of the image. Replace `Y` with the height of the image.
 
 -awX : This works like the command `-ahY`, but this one is used to determine the image weight. you just have to change `X` with the image weight. `-awX` and `-ahY` are used to determine the image size. It's a good practice to always use these two commands in your gritflags.
 
-Tilemap Options
+### Tilemap Options
 
 `-m` : By default a tilemap isn't generated during compilation. Add this command if you want a tilemap to be generated. Note that if you don't add this command, the tileset will become a sprite. If you didn't add this command, you can ignore the other commands in this section.
 
