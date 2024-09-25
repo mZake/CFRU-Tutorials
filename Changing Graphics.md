@@ -12,27 +12,40 @@ So, lets start. Here's a list of commands that I consider important, and when yo
 
 ### Graphics Options
 
-`-g!` : By default a tileset is generated during compilation. If you don't want a tileset to be generated, add this command. If you added this command, you can ignore all the other commands in this section.
+`-g!` - By default a tileset is generated during compilation. If you don't want a tileset to be generated, add this command. If you added this command, you can ignore all the other commands in this section.
 
-`-gBx` : In this command, replace `x` with the bit depth of your image. If your image has 16 colors, add `-gB4`. If your image has 256 colors, add `-gB8`. (16 colors = 4, 256 colors = 8).
+`-gBx` - In this command, replace `x` with the bit depth of your image. If your image has 16 colors, add `-gB4`. If your image has 256 colors, add `-gB8`. (16 colors = 4, 256 colors = 8).
 
-`-gu8` : This is a required command, you must always add it, otherwise you'll have problems.
+`-gu8` - This is a required command, you must always add it, otherwise you'll have problems.
 
-`-gzl` : Add this command if you want the generated tileset to be compressed.
+`-gzl` - Add this command if you want the generated tileset to be compressed.
 
 ### Area Options
 
-`-ahY` : This command is used to determine the height of the image. Replace `Y` with the height of the image.
+`-ahY` - This command is used to determine the height of the image. Replace `Y` with the height of the image.
 
-`-awX` : This works like the command `-ahY`, but this one is used to determine the image weight. you just have to change `X` with the image weight. `-awX` and `-ahY` are used to determine the image size. It's a good practice to always add these two commands in your gritflags.
+`-awX` - This works like the command `-ahY`, but this one is used to determine the image weight. you just have to change `X` with the image weight. `-awX` and `-ahY` are used to determine the image size. It's a good practice to always add these two commands in your gritflags.
 
 ### Tilemap Options
 
-`-m` : By default a tilemap isn't generated during compilation. Add this command if you want a tilemap to be generated. Note that if you don't add this command, the tileset will become a sprite. If you didn't add this command, you can ignore the other commands in this section.
+`-m` - By default a tilemap isn't generated during compilation. Add this command if you want a tilemap to be generated. Note that if you don't add this command, the tileset will become a sprite. If you didn't add this command, you can ignore the other commands in this section.
 
-`-mRx` : This command enables tiles reduction for tilemaps. If the image have 16 colors, add `-mR4`. If the image have 256 colors, add `-mR8`. This command isn't required, but it's recommended.
+`-mRx` - This command enables tiles reduction for tilemaps. If the image have 16 colors, add `-mR4`. If the image have 256 colors, add `-mR8`. This command isn't required, but it's recommended.
 
-`-mu8` : This is a required command, you must always add it, otherwise you'll have problems.
+`-mu8` - This is a required command, you must always add it, otherwise you'll have problems.
 
-`-mzl` : Add this command if you want the generated tilemap to be compressed.
+`-mzl` - Add this command if you want the generated tilemap to be compressed.
 
+### Palette Options
+
+`-p!` - By default, a palette is generated. If you don't want a palette to be generated, add this command. If you added this command, you can ignore all other commands in this section.
+
+`-pu8` - Only add this command if your palette is compressed. Otherwise you can ignore it.
+
+`-pzl` - Add this command if you want the generated palette to be compressed.
+
+### Output Options
+
+`-fh` - Always add this command to your gritflags.
+
+`-fts` - Always add this command to your gritflags.
