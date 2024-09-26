@@ -49,3 +49,68 @@ So, lets start. Here's a list of commands that I consider important, and when yo
 `-fh` - Always add this command to your gritflags.
 
 `-fts` - Always add this command to your gritflags.
+
+The list of commands ends here. Using gritflags is very simple, all you need to do is create a file called **gritflags.txt**, and add all the commands you want inside it.
+
+Note that you shouldn't put two gritflags in the same folder, otherwise you will have problems.
+
+## Step 2 - Getting the Image info.
+
+This is all the image info you need to get:
+
+- Tileset compression
+- Tilemap compression
+- Palette compression
+- Tileset pointer
+- Tilemap pointer
+- Palette pointer
+
+If that wasn't clear, you don't need to look for tilemap pointer if the image is a sprite, since sprites don't have tilemaps. Fortunately, it's possible to get all this info just using HMA (Hex Maniac Advance)!
+
+Let's start by getting the compression of the tileset, sprite, tilemap and palette. In HMA, navigate to the image you want to change, It is possible to find out information about compression and the palette by looking for some keywords at the image's anchor. Here is a list of these keywords:
+
+## Tileset
+
+`lzt4` - Compressed tileset with 16 colors.
+
+`lzt8` - Compressed tileset with 256 colors.
+
+`uct4` - Uncompressed tileset with 16 colors.
+
+`uct8` - Uncompressed tileset with 256 colors.
+
+## Sprite
+
+`lzs4` - Compressed sprite with 16 colors.
+
+`lzs8` - Compressed sprite with 256 colors.
+
+`ucs4` - Uncompressed sprite with 16 colors.
+
+`ucs8` - Uncompressed sprite with 256 colors.
+
+## Tilemap
+
+`lzm4` - Compressed tilemap with 16 colors.
+
+`lzm8` - Compressed tilemap with 256 colors.
+
+`ucm4` - Uncompressed tilemap with 16 colors.
+
+`ucm8` - Uncompressed tilemap with 256 colors.
+
+## Palette
+
+`lzp4` - Compressed 16 colors palette.
+
+`lzp8` - Compressed 256 colors palette.
+
+`ucp4` - Uncompressed 16 colors palette.
+
+`ucp8` - Uncompressed 256 colors palette.
+
+Here's an example with the title screen charizard tileset:
+
+![Capturar](https://github.com/user-attachments/assets/80fa91df-8fcb-498a-bf28-38e1a9e6383a)
+
+In this case I got the keyword `lzt4`, which means this is a compressed tileset with 16 colors. You apply this same procedure to sprites, palettes and tilemaps too.
