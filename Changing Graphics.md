@@ -122,3 +122,9 @@ Getting the tileset, sprite, tilemap and palette pointers is very simple, All yo
 When you press Enter, something like this should appear:
 
 ![Capturar2](https://github.com/user-attachments/assets/5bad3fdb-0b47-41fd-812d-3b1f784c67c2)
+
+There will be cases where they can have two or more pointers, like this:
+
+![Capturar3](https://github.com/user-attachments/assets/bf487f94-0e82-4729-a120-0f579300dc98)
+
+As indicated in the first example, the place where the find function takes you is the pointer offset. In case you have two or more pointers, you can double-click one of the pointers and then get the offset from there. I'll explain better what to do when you get two or more pointers.
