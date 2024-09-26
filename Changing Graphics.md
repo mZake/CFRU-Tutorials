@@ -69,7 +69,7 @@ If that wasn't clear, you don't need to look for tilemap pointer if the image is
 
 Let's start by getting the compression of the tileset, sprite, tilemap and palette. In HMA, navigate to the image you want to change, It is possible to find out information about compression and the palette by looking for some keywords at the image's anchor. Here is a list of these keywords:
 
-## Tileset
+### Tileset
 
 `lzt4` - Compressed tileset with 16 colors.
 
@@ -79,7 +79,7 @@ Let's start by getting the compression of the tileset, sprite, tilemap and palet
 
 `uct8` - Uncompressed tileset with 256 colors.
 
-## Sprite
+### Sprite
 
 `lzs4` - Compressed sprite with 16 colors.
 
@@ -89,7 +89,7 @@ Let's start by getting the compression of the tileset, sprite, tilemap and palet
 
 `ucs8` - Uncompressed sprite with 256 colors.
 
-## Tilemap
+### Tilemap
 
 `lzm4` - Compressed tilemap with 16 colors.
 
@@ -99,7 +99,7 @@ Let's start by getting the compression of the tileset, sprite, tilemap and palet
 
 `ucm8` - Uncompressed tilemap with 256 colors.
 
-## Palette
+### Palette
 
 `lzp4` - Compressed 16 colors palette.
 
@@ -114,3 +114,11 @@ Here's an example with the title screen charizard tileset:
 ![Capturar](https://github.com/user-attachments/assets/80fa91df-8fcb-498a-bf28-38e1a9e6383a)
 
 In this case I got the keyword `lzt4`, which means this is a compressed tileset with 16 colors. You apply this same procedure to sprites, palettes and tilemaps too.
+
+Getting the tileset, sprite, tilemap and palette pointers is very simple, All you have to do is get the offset where they are located and then search for the obtained offset using the find function. Here's an example:
+
+![Capturar](https://github.com/user-attachments/assets/6f04ffad-50e8-4013-bc2e-44131a946ba0)
+
+When you press Enter, something like this should appear:
+
+![Capturar2](https://github.com/user-attachments/assets/5bad3fdb-0b47-41fd-812d-3b1f784c67c2)
